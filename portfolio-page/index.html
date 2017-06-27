@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <!-- HTML HEADER -->
+	<head>
+        <title>Resume</title>
+        
+        <!-- META DATA, IMPORT BOOTSTRAP, FONTS, ICONS, etc... -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="/../bootstrap.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="/portfolio-page/portfolioStyle.css"/>
+	</head>
+    
+    <!-- HTML BODY -->
+	<body>
+      <div class="container-fluid">
+          <div class="container-fluid">
+              <section id="navbar-login">
+                  <div class="navbar-top" role="navigation">
+                      <div class="form-group pull-right">
+                          <ul id="nav2" class="form-inline">
+                              <li class="list-group-item-action">
+                                  <div class="form-group">
+                                      <i class="fa fa-lg fa-user"></i>
+                                      <a href="#myModal" class="nav-text" role="button" data-toggle="modal" id="myBtn">LOGIN</a>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <!-- LOGIN POP-UP WINDOW for MOBILE AND DESKTOP -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                  <img class="modal-title find" id="myModalLabel" src="https://geeks.ae/wp-content/themes/geeks/assets/images/geeks-logo.png" width="35%" height="35%">
+                              </div>
+                              <div class="modal-body">
+                                  <form role="form">
+                                      <div class="form-group">
+                                          <div class="input-group">
+                                              <input type="text" class="form-control" id="uLogin" placeholder="Username">
+                                              <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <div class="input-group">
+                                              <input type="password" class="form-control" id="uPassword" placeholder="Password">
+                                              <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <div class="checkbox">
+                                              <label><input type="checkbox"> Remember me</label>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="form-control btn btn-primary">Sign in</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+          
+          <!-- TITLE AND SUBTITLE -->
+          <div class="container-fluid">
+              <h1 id="title"><a href="http://www.joshuabloom.me/">Catalina and Joshua</a></h1>
+              <h3 id="subtitle"><a href="http://www.joshuabloom.me/">Teaching Couple at Large</a></h3>
+          </div>
+          
+          <!-- NAVIGATION MENU WITH ICONS for DESKTOP, LAPTOP, & TABLET -->
+          <div class="container-fluid">
+              <hr>                          <!-- used at the beginning of a new section to denote thematic change in content -->
+              <h2>Navigation Bar for Desktop and Mobile Devices</h2>
+                <section id="navbar-new-1">
+                    <ul id="nav" class="form-inline">
+                        <div class="form-group">                            <!-- group tabs in 2s for smaller size screens -->
+                            <li class="list-group-item-action">
+                                <div class="form-group pull-left">          <!-- group icons with text -->
+                                    <a href="/resume-page/index.html"><i class="fa fa-lg fa-file-text"></i></a>
+                                    <a href="/resume-page/index.html" class="nav-text">RESUME</a>
+                                </div>
+                            </li>
+                            <li class="list-group-item-action">
+                                <div class="form-group pull-left">
+                                    <a href="/portfolio-page/index.html"><i class="fa fa-lg fa-briefcase"></i></a>
+                                    <a href="/portfolio-page/index.html" class="nav-text">PORTFOLIO</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="form-group">
+                             <li class="list-group-item-action">
+                                 <div class="form-group pull-left">
+                                    <a href="/music-page/index.html"><i class="fa fa-lg fa-music"></i></a>
+                                    <a href="/music-page/index.html" class="nav-text">MUSIC</a>
+                                 </div>
+                            </li>
+                            <li class="list-group-item-action">
+                                <div class="form-group pull-left">
+                                    <a href="#"><i class="fa fa-lg fa-address-card"></i></a>
+                                    <a href="/contact-page/index.html" class="nav-text">CONTACT</a>
+                                </div>
+                            </li>
+                        </div>
+                        <!-- NEW 
+                        <div class="form-group">
+                            <li class="list-group-item-action">
+                                <div class="form-group pull-left">
+                                    <a href="#myModal" role="button" data-toggle="modal" id="myBtn">
+                                    <i class="fa fa-lg fa-user"></i>LOGIN</a>
+                                </div>
+                            </li>
+                        </div>
+                       NEW ^ -->
+                    </ul>
+              </section>
+          </div>
+          
+          <hr>
+          <!-- NAVIGATION MENU WITH ICONS for MOBILE PHONE -->          <!-- use .hidden and .show to switch between navigation bars -->
+          <h2>Navigation Bar for Mobile Devices</h2>                    <!-- according to the user's screen size (see JavaScript) -->
+          <div class="container-fluid "> 
+              <section id="navbar-new-2">
+                  <div class="container-top">
+                      <div class="list-group">
+                          <a href="/resume-page/index.html" class="list-group-item list-group-item-action">
+                              <i class="fa fa-lg fa-file-text"></i>RESUME</a>
+                          <a href="/portfolio-page/index.html" class="list-group-item list-group-item-action active">
+                              <i class="fa fa-lg fa-briefcase"></i>PORTFOLIO</a>
+                          <a href="/music-page/index.html" class="list-group-item list-group-item-action">
+                              <i class="fa fa-lg fa-music"></i>MUSIC</a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                              <i class="fa fa-lg fa-address-card"></i>CONTACT</a>
+                      </div>
+                  </div>
+              </section>
+          </div>      
+	   
+    
+        <!-- MAIN CONTENT -->
+        <div class="container-main">     
+            <section id="portfolio-content" class="gallery">
+                <h1>PORTFOLIO PAGE COMING SOON</h1>
+            </section>
+        </div>
+      
+
+    <!-- NAV BAR BOTTOM --> 
+        <div class="navbar-bottom navbar-inverse navbar-fixed-bottom" role="navigation">
+            <div class="container">
+                <!-- SEARCH BAR --> 
+                <div class="container-bottom">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-5 ">
+                            <div class="search-bar">
+                                <form action="/submit-search-query">
+                                    <input type="text" class="form-control" placeholder="Enter search query" required>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-1">
+                            <div class="search-button">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-magnify-glass"></i> Search</button> 
+                            </div>
+                        </div>
+                        <!-- offset columns because there's no content for middle column/center of page -->
+                        <div class="col-xs-4 col-xs-offset-2 col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-4">
+                            <div class="navbar-text">
+                                <a href="http://www.facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a>
+                                <a href="http://www.twitter.com/"><i class="fa fa-twitter-square fa-2x"></i></a>
+                                <a href="https://instagram.com/"><i class="fa fa-instagram fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

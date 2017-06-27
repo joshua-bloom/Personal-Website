@@ -1,0 +1,206 @@
+html, body {
+	font-family: Helvetica, "Helvetica Neue", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	margin: 30px;
+	background-color: white;
+}
+
+/* TEXT FORMATTING */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+
+h4, h5, h6 {
+	color: #666;
+	text-decoration: underline;
+}
+
+strong { font-style: oblique; }
+
+em { font-style: italic; }
+
+section {
+	margin-bottom: 60px;   /* provide space between each section in MAIN container */
+}
+
+/* HYPERLINK FORMATTING */
+
+a { color: #08C; }
+a:hover { color: red; }
+a:active { color: maroon; }
+a:visited { color: darkblue; }
+
+.row {
+	background-color: #f7f7f7;
+}
+
+.row h2 {
+	font-family: verdana;
+	font-size: 24px;
+	text-align: center;
+	color: #5bc0de;
+}
+
+/* NAVBAR CSS STYLING */
+
+.navbar-top {
+	background-color: white;
+}
+
+.navbar-top li {
+    display: inline;
+    font-family: verdana;
+}
+
+.navbar-top li a:hover {
+    text-decoration: none;
+}
+
+.navbar-top button {
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.navbar-top button a {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.navbar-top button i {
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.dropdown-menu {
+	background-color: #5bc0de;
+    width: 100%;
+    margin-top: 25px;
+    margin-left: -23px;
+    padding-left: 12px;
+}
+
+.dropdown-menu > li > a {
+	color: white;
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.dropdown-menu > li > a:hover {
+	color: #5bc0de;
+}
+
+.navbar-bottom {
+	background-color: #f7f7f7;
+}
+
+.navbar-bottom a {
+	color: #5bc0de;
+    font-size: 18px;
+}
+
+.navbar-bottom a:hover {
+	color: #5bc0de;
+	opacity: 0.5;
+}
+
+.search-bar form input {
+    margin-top: 18px;
+    font-size: 18px;
+    text-align: center;
+} 
+
+.search-button button {
+    margin-top: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 18px;
+    color: white;
+    background-color: #5bc0de;
+} 
+
+.search-button button:hover {
+	color: white;
+    background-color: #5bc0de;
+    opacity: 0.5;
+}
+
+
+/* CONTAINER FORMATTING */
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.container > div {
+
+}
+.container-top {
+	
+}
+.container-main {
+	min-height: 50px;
+}
+.container-bottom {
+	text-align: center;
+}
+
+.page-header {
+	border-bottom: 1px solid #CCC;
+}
+
+.page-header h1 {
+	text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+/* THUMBNAIL-PANE FORMATTING */
+
+.thumbnail-pane {
+	font-size: 0;
+	margin-bottom: 20px;
+}
+
+.thumbnail-pane > img, .thumbnail-pane > div {
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.thumbnail-pane img {
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	width: 25%;
+	padding: 4px;
+}
+.thumbnail-pane > div {
+	display: inline-block;
+	padding: 0 30px;
+	vertical-align: middle;
+	width: 75%;
+}
+
+.thumbnail-pane > div > iframe {
+    margin-top: 8px;
+    padding: 4px;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	width: 75%;
+}
+
+.thumbnail-pane > h3 {
+    text-align: left;
+    margin-left: 2px;
+}

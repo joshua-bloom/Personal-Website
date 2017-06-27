@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    
+    <!-- HTML HEADER -->
+	<head>
+        <title>Resume</title>
+        
+        <!-- META DATA, IMPORT BOOTSTRAP, FONTS, ICONS, etc... -->
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="/../bootstrap.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="/music-page/musicStyle.css"/>
+	</head>
+    
+    <!-- HTML BODY -->
+	<body>
+      <div class="container">
+	    
+         <!-- NAV BAR TOP --> 
+        <div class="container">
+            <div class="navbar-top navbar-fixed-top">
+              <ul class="pull-left">
+                <li>
+                    <button type="button" class="btn btn-info btn-md" aria-label="Left Align"><i class="fa fa-md fa-home"></i>
+                    <a href="http://www.joshuabloom.me/">Home</a></button>
+                </li>
+              </ul>
+              <ul class="pull-right">	
+                <li>
+                    <button type="button" class="btn btn-info btn-md"><a href="/resume-page/index.html"><i class="fa fa-md fa-file-text"></i></a><a href="/resume-page/index.html">Resume</a></button>        <!-- LINK TO RESUME SUBDOMAIN PAGE -->
+                </li>
+                <li>
+                    <button type="button" class="btn btn-info btn-md"><a href="/portfolio-page/index.html"><i class="fa fa-md fa-briefcase"></i></a><a href="/portfolio-page/index.html">Portfolio</a></button>  <!-- LINK TO PORTFOLIO SUBDOMAIN PAGE -->
+                </li>
+                <li>
+                    <button type="button" class="btn btn-info btn-md"><a href="/music-page/index.html"><i class="fa fa-md fa-music"></i></a><a href="/music-page/index.html">Music</a></button>          <!-- LINK TO MUSIC SUBDOMAIN PAGE -->
+                </li>
+                
+                <!-- "Contact" dropdown menu -->   
+                <li class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+                    <i class="fa fa-md fa-address-card"></i> Contact</button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation">
+                            <a role="menuitem" class="text-left" tabindex="0" href="mailto:joshuabloom@me.com">
+                            <span class="fa fa-md fa-envelope pull-left"></span>Email</a>
+                        </li>
+                        <!--
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="1" href="tel:1-207-415-0005">
+                            <span class="fa fa-lg fa-phone pull-left"></span>Mobile</a>
+                        </li>
+                        -->
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="2" href="skype:joshuambloom?call">
+                            <i class="fa fa-lg fa-skype pull-left"></i>Skype</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="3" href="https://goo.gl/maps/Dse1qtHsS3o" target="_blank">
+                            <span class="fa fa-lg fa-map-marker pull-left"></span>Address</a>
+                        </li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+	    </div>  
+    
+        <!-- MAIN CONTENT -->
+        <div class="container-main">     
+            <section id="music-videos" class="gallery">
+               <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Album</h3>
+                        <div class="thumbnail-pane">
+                            <h3>Random Access Memories (2013)</h3>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Daft_Punk_-_%22Doin%27_it_Right%22_%28Promotional_Single%29.jpg" alt="daft punk">
+                            <div>
+                                <!-- EMBEDDED YOUTUBE MUSIC VIDEO -->
+                                <iframe width="560" height="285" src="https://www.youtube.com/embed/a5uQMwRMHcs" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                         <div class="thumbnail-pane">
+                            <h3>DAMN. (2017)</h3>
+                            <img src="http://www.xxlmag.com/files/2017/04/C9H8-PWUIAAzbQ2.jpg" alt="kendrick lamar">
+                            <div>
+                                <!-- EMBEDDED YOUTUBE MUSIC VIDEO -->
+                                <iframe width="560" height="285" src="https://embed.vevo.com?isrc=USUV71700785" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    <!-- NAV BAR BOTTOM --> 
+        <div class="navbar-bottom navbar-inverse navbar-fixed-bottom" role="navigation">
+            <div class="container">
+                <!-- SEARCH BAR --> 
+                <div class="container-bottom">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="search-bar">
+                                <form action="/submit-search-query">
+                                    <input type="text" class="form-control" placeholder="Enter search query" required>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <div class="search-button">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-magnify-glass"></i> Search</button> 
+                        
+                            </div>
+                        </div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-3">
+                            <div class="navbar-text pull-right">
+                                <a href="http://www.facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a>
+                                <a href="http://www.twitter.com/"><i class="fa fa-twitter-square fa-2x"></i></a>
+                                <a href="https://instagram.com/"><i class="fa fa-instagram fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
