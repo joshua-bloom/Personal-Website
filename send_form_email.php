@@ -45,25 +45,23 @@ if(isset($_POST['email'])) {
   if(strlen($error_message) > 0) {
     died($error_message);
   }
-    $email_message = "Form details below.\n\n";
+    $email_message = "Form details below.";
     
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
       return str_replace($bad,"",$string);
     }
     
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";   
-    $email_message .= "Comments: ".clean_string($comments)."\n";
+    $email_message .= " First Name: ".clean_string($first_name);
+    $email_message .= " Last Name: ".clean_string($last_name);
+    $email_message .= " Email: ".clean_string($email_from);   
+    $email_message .= " Comments: ".clean_string($comments);
     
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
-sleep(2);
-echo "<meta http-equiv='refresh' content=\"0; url=http://tutsme-webdesign.info/index.php\">";
+    // create email headers
+    $headers = 'From: '.$email_from."\r".'Reply-To: '.$email_from."\r" .'X-Mailer: PHP/' . phpversion();
+    @mail($email_to, $email_subject, $email_message, $headers);
+    sleep(2);
+    echo "<meta http-equiv='refresh' content=\"0; url=http://tutsme-webdesign.info/index.php\">";
 ?>
 <?php
 }
