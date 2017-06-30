@@ -8,14 +8,37 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <link type="text/css" rel="stylesheet" href="bootstrap.css">
-        <link type="text/css" rel="stylesheet" href="homepageStyle.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="homepageStyle.css">
 	</head>
     
     <!-- HTML BODY -->
 	<body>
       <div class="container-fluid">
+          <div class="container-fluid">
+              <section id="navbar-login">
+                  <div class="navbar-top" role="navigation">
+                      <div class="form-group">
+                          <ul id="nav2" class="form-inline">
+                              <li class="list-group-item-action">
+                                  <div class="form-group pull-left">
+                                      <a href="/mobile-page/index.html"><i class="fa fa-lg fa-mobile"></i></a>
+                                      <a href="/mobile-page/index.html" class="nav-text">MOBILE</a>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </section>
+          </div>
+          
+          <!-- TITLE AND SUBTITLE -->
+          <div class="container-fluid">
+              <h1 id="title"><a href="#">Catalina and Joshua</a></h1>
+              <h3 id="subtitle"><a href="#">Teaching Couple at Large</a></h3>
+          </div>
+          
           <!-- NAVIGATION MENU WITH ICONS for DESKTOP, LAPTOP, & TABLET -->
           <div class="container-fluid">
               <hr>                          <!-- used at the beginning of a new section to denote thematic change in content -->
@@ -45,62 +68,48 @@
                             <li class="list-group-item-action">
                                   <div class="form-group pull-left">
                                       <i class="fa fa-lg fa-address-card"></i>
-                                      <a href="#myModal" role="button" class="btn btn-custom" data-toggle="modal">Open Contact Form</a>
+                                      <a href="#myModal" class="nav-text" role="button" data-toggle="modal" id="myBtn">CONTACT</a>
                                   </div>
                             </li>
                         </div>
                     </ul>
                   <hr>
-                
-                  <!-- Modal -->
+                <!-- CONTACT POP-UP WINDOW for MOBILE AND DESKTOP -->
                   <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
+                      <div class="modal-dialog modal-sm">
                           <div class="modal-content">
-                              
-                              <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                  <h4 class="modal-title">Contact Form</h4>
+                              <div class="modal-header text-center">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                  <br><h3 class="modal-title" id="myModalLabel">Contact Us</h3>
+                                  <img id="myModalLabel" src="images/CatalinaAndJoshua.jpg" width="75%" height="75%">
                               </div>
-                              
                               <div class="modal-body">
-                                  <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">  <!-- links to PHP file -->
-                                    <div class="form-group">
-                                        <label class="control-label col-md-4" for="first_name">First Name</label>
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-4" for="last_name">Last Name</label>
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-4" for="email">Email Address</label>
-                                        <div class="col-md-6 input-group">
-                                            <span class="input-group-addon">@</span>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-4" for="comment">Question or Comment</label>
-                                        <div class="col-md-6">
-                                            <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-md-6">
-                                            <button type="submit" value="Submit" class="btn btn-custom pull-right">Send</button>
-                                        </div>
-                                    </div>
+                                  <div class="text-center">We'd love to hear from you.</div>
+                                  <form class="form-horizontal col-xs-12 col-sm-12 col-md-12 col-lg-12" name="commentform" method="post" action="send_form_email.php">
+                                      <div class="form-group">
+                                          <br><label>Name</label>
+                                          <input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Message</label>
+                                          <textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>E-Mail</label>
+                                          <input class="form-control email" placeholder="Your email, so that we can contact you." data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text">
+                                      </div>
                                   </form>
-                              </div>    <!-- End of Modal body -->
-                              
-                          </div>        <!-- End of Modal content -->
-                      </div>            <!-- End of Modal dialog -->
-                  </div>                <!-- End of Modal -->
-                  
+                              </div>
+                              <div class="modal-footer">
+                                  <div class="form-group form-inline">
+                                      <button class="btn pull-left" data-dismiss="modal" aria-hidden="true">Close</button>
+                                      <button type="submit" class="btn btn-success pull-right">Send</button>
+                                      <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </section>
           </div>
           
