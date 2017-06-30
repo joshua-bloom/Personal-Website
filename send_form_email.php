@@ -4,7 +4,7 @@ if(isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "joshuabloom@me.com";
     $email_subject = "EMAIL SUBJECT HERE";
- 
+
     function died($error) {
         // your error code can go here
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
@@ -58,7 +58,7 @@ if(isset($_POST['email'])) {
     $email_message .= " Comments: ".clean_string($comments);
     
     // create email headers
-    $headers = 'From: '.$email_from."\r".'Reply-To: '.$email_from."\r" .'X-Mailer: PHP/' . phpversion();
+    $headers = 'From: '.$email_from.'Reply-To: '.$email_from.'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
     sleep(2);
     echo "<meta http-equiv='refresh' content=\"0; url=http://tutsme-webdesign.info/index.php\">";
